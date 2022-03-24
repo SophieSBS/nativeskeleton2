@@ -1,0 +1,69 @@
+body, html {
+    height: 100%;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+}
+header nav, footer {
+    align-items: center;
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding-left: .5em;
+    padding-right: .5em;
+}
+
+/* ----------------- header -------------- */
+header nav h1 {
+    border: 0px solid green;
+    font-size: 2em;
+}
+header nav ul {
+    border: 0px solid yellow;
+    list-style: none;
+    text-align: right;
+}
+header nav ul li {
+    display: inline;
+    font-size: 1.2em;
+    margin: 0;
+}
+header nav ul li:not(:last-child):after {
+  content: ' | ';
+  color: magenta;
+}
+header nav a {
+    color: inherit;
+    font-style: normal;
+    font-variant: small-caps;
+    text-decoration: none;
+}
+header nav ul a:hover {
+    text-decoration: underline;
+}
+
+/* ----------------- main -------------- */
+main.frontpage {
+    border: 1px solid black;
+    height: 80%;
+    min-height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+main.otherpage {
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
+    grid-gap: 1em;    
+    height: 80%;
+    min-height: 350px;
+    padding: 1em;
+}
+#loginmsg {
+    color: #c00;
+    font-weight: 700;
+}
+/* ----------------- footer -------------- */
