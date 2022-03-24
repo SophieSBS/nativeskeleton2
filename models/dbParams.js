@@ -1,8 +1,9 @@
 'use strict';
 
 module.exports = {
-    host     : '0.0.0.0',
-    user     : 'root',
-    password : 'kms32usj',
-    database : 'nodecontacts'
+    host     : "localhost",
+    user     : "nobody",
+    password : "test",
+    port     : "3306",
+    database : "nodecontacts"
 }

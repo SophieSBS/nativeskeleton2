@@ -4,7 +4,7 @@
  */
 const http = require("http");                   // http module
 const lib = require("../controllers/libWebUtil");   // home grown utilities
-const hostname = "localhost";
+const hostname = "0.0.0.0";
 const port = Number(process.argv[2]) || 3000;
 
 module.exports = {
